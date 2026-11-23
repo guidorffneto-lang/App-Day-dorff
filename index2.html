@@ -1,12 +1,386 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <title>Construcões Modernas</title>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
-  </head>
-  <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
-  </body>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construções Modernas</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f1f4f6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(120deg, #172c3c, #54758a);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background: #263f50;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a8d8f0;
+}
+
+section {
+    padding: 45px 7%;
+}
+
+.titulo {
+    text-align: center;
+    color: #263f50;
+    margin-bottom: 25px;
+    font-size: 29px;
+}
+
+.introducao {
+    text-align: center;
+    line-height: 1.8;
+    max-width: 950px;
+    margin: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #0002;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #263f50;
+    padding: 15px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    line-height: 1.6;
+}
+
+.fundo {
+    background: #dce7ed;
+}
+
+.lista {
+    max-width: 850px;
+    margin: auto;
+    line-height: 2;
+}
+
+.lista li {
+    margin-bottom: 12px;
+}
+
+.curiosidade {
+    background: #263f50;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 35px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.conclusao {
+    text-align: center;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+}
+
+footer {
+    background: #172c3c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Construções Modernas</h1>
+    <p>Como a tecnologia está transformando a arquitetura e as cidades</p>
+</header>
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#tipos">Tipos</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#vantagens">Vantagens</a>
+    <a href="#curiosidades">Curiosidades</a>
+</nav>
+
+<section id="inicio">
+    <h2 class="titulo">O que são construções modernas?</h2>
+
+    <div class="introducao">
+        <p>
+        As construções modernas são obras que utilizam novas tecnologias,
+        materiais e formas de construção. Elas podem ser casas, prédios,
+        pontes, escolas, hospitais e muitos outros espaços.
+        </p>
+
+        <p>
+        Atualmente, a arquitetura está evoluindo bastante. Os engenheiros
+        e arquitetos procuram criar construções mais bonitas, resistentes,
+        confortáveis e que ajudem a preservar o meio ambiente.
+        </p>
+
+        <p>
+        Uma das principais características dessas construções é a união
+        entre tecnologia, criatividade e sustentabilidade.
+        </p>
+    </div>
+</section>
+
+<section class="fundo" id="tipos">
+    <h2 class="titulo">Principais tipos de construções modernas</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600" alt="Casa moderna">
+            <h3>🏠 Casas modernas</h3>
+            <p>
+            Possuem designs diferentes, ambientes integrados, grandes
+            janelas e aproveitamento da luz natural. Muitas utilizam
+            energia solar e sistemas inteligentes.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Prédios modernos">
+            <h3>🏢 Prédios inteligentes</h3>
+            <p>
+            São edifícios que utilizam sistemas tecnológicos para
+            controlar iluminação, temperatura, elevadores e segurança.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600" alt="Construção sustentável">
+            <h3>🌱 Construções sustentáveis</h3>
+            <p>
+            São feitas pensando no meio ambiente. Podem utilizar
+            materiais recicláveis, energia solar e sistemas para
+            economizar água.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600" alt="Arquitetura moderna">
+            <h3>🏗️ Construções tecnológicas</h3>
+            <p>
+            Utilizam máquinas modernas, impressoras 3D e programas
+            de computador para facilitar os projetos e as obras.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600" alt="Ponte moderna">
+            <h3>🌉 Pontes modernas</h3>
+            <p>
+            São projetadas para suportar grandes pesos e facilitar
+            o transporte de pessoas e veículos, utilizando materiais
+            resistentes e técnicas avançadas.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600" alt="Arquitetura contemporânea">
+            <h3>🏫 Escolas e hospitais</h3>
+            <p>
+            Possuem espaços planejados para oferecer mais conforto,
+            acessibilidade, iluminação e segurança para as pessoas.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="tecnologia">
+    <h2 class="titulo">Tecnologias utilizadas nas construções</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600" alt="Painéis solares">
+            <h3>☀️ Energia solar</h3>
+            <p>
+            Os painéis solares transformam a luz do sol em energia
+            elétrica, ajudando a diminuir os gastos com eletricidade.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600" alt="Tecnologia e engenharia">
+            <h3>💻 Projetos digitais</h3>
+            <p>
+            Os arquitetos utilizam computadores para criar modelos
+            em 3D e visualizar como a construção ficará antes de começar.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600" alt="Máquinas industriais">
+            <h3>🤖 Máquinas modernas</h3>
+            <p>
+            Equipamentos modernos ajudam a transportar materiais,
+            realizar tarefas pesadas e aumentar a produtividade.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="fundo" id="vantagens">
+    <h2 class="titulo">Vantagens e desvantagens</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>✅ Vantagens</h3>
+            <p>
+            • Maior conforto para as pessoas.<br>
+            • Economia de energia e água.<br>
+            • Uso de novas tecnologias.<br>
+            • Melhor aproveitamento dos espaços.<br>
+            • Possibilidade de reduzir impactos ambientais.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚠️ Desvantagens</h3>
+            <p>
+            • Algumas obras possuem custos elevados.<br>
+            • Precisam de profissionais especializados.<br>
+            • Algumas tecnologias são caras.<br>
+            • Podem demorar para serem construídas.<br>
+            • Exigem manutenção adequada.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">Materiais utilizados</h2>
+
+    <div class="introducao">
+        <p>
+        Nas construções modernas são utilizados diversos materiais,
+        como concreto, aço, vidro, madeira e materiais recicláveis.
+        Cada um possui uma função importante.
+        </p>
+
+        <ul class="lista">
+            <b>Concreto:</b> usado para dar resistência e sustentação.
+            <b>Aço:</b> ajuda a suportar grandes estruturas.</br>
+            <b>Vidro:</b> permite a entrada de luz natural e deixa os ambientes modernos.</br>
+            <b>Madeira:</b> pode ser utilizada em estruturas e acabamentos.</br>
+            <b>Materiais reciclados:</b> ajudam a diminuir o desperdício.
+        </ul>
+    </div>
+</section>
+
+<section class="fundo" id="curiosidades">
+    <h2 class="titulo">Curiosidades sobre construções modernas</h2>
+
+    <div class="curiosidade">
+        <h3>Você sabia?</h3>
+        <p>
+        Existem prédios que possuem jardins e árvores em suas fachadas.
+        </p>
+        <p>
+        Algumas casas já foram construídas utilizando impressoras 3D.
+        </p>
+        <p>
+        Alguns edifícios conseguem produzir parte da energia que consomem.
+        </p>
+        <p>
+        Existem construções que aproveitam a água da chuva para
+        atividades como irrigação e limpeza.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">O futuro das construções</h2>
+
+    <div class="introducao">
+        <p>
+        No futuro, as construções poderão ficar ainda mais modernas.
+        A tecnologia poderá ajudar a criar casas que funcionam quase
+        automaticamente, prédios que produzem sua própria energia
+        e materiais que causam menos danos ao meio ambiente.
+        </p>
+
+        <p>
+        A impressão 3D, a inteligência artificial e a robótica também
+        poderão transformar a maneira como as obras são planejadas
+        e realizadas.
+        </p>
+    </div>
+</section>
+
+
+
+</body>
 </html>
